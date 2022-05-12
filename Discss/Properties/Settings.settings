@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Discss.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ImageDirName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">image</Value>
+    </Setting>
+    <Setting Name="ServerXmlName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server.xml</Value>
+    </Setting>
+    <Setting Name="CharacterXmlName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">character.xml</Value>
+    </Setting>
+    <Setting Name="SettingXmlName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">setting.xml</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">55555</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
