@@ -24,7 +24,7 @@ namespace Discss
         public MainForm()
         {
             InitializeComponent();
-
+            this.Icon = Properties.Resources.avwfu_niymp;
         }
         #endregion
 

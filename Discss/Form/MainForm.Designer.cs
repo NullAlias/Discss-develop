@@ -29,8 +29,10 @@ namespace Discss
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.colseButton = new System.Windows.Forms.Button();
             this.DSOButton = new System.Windows.Forms.Button();
             this.settingButton = new System.Windows.Forms.Button();
             this.characterButton = new System.Windows.Forms.Button();
@@ -38,7 +40,6 @@ namespace Discss
             this.imageServerToggleButton = new System.Windows.Forms.Button();
             this.menuSplitter = new System.Windows.Forms.Splitter();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.colseButton = new System.Windows.Forms.Button();
             this.menuPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +51,7 @@ namespace Discss
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(200, 450);
+            this.menuPanel.Size = new System.Drawing.Size(200, 679);
             this.menuPanel.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -74,8 +75,20 @@ namespace Discss
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 450);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 679);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // colseButton
+            // 
+            this.colseButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colseButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.colseButton.Location = new System.Drawing.Point(3, 632);
+            this.colseButton.Name = "colseButton";
+            this.colseButton.Size = new System.Drawing.Size(194, 44);
+            this.colseButton.TabIndex = 5;
+            this.colseButton.Text = "閉じる";
+            this.colseButton.UseVisualStyleBackColor = true;
+            this.colseButton.Click += new System.EventHandler(this.colseButton_Click);
             // 
             // DSOButton
             // 
@@ -144,7 +157,7 @@ namespace Discss
             this.menuSplitter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.menuSplitter.Location = new System.Drawing.Point(200, 0);
             this.menuSplitter.Name = "menuSplitter";
-            this.menuSplitter.Size = new System.Drawing.Size(3, 450);
+            this.menuSplitter.Size = new System.Drawing.Size(3, 679);
             this.menuSplitter.TabIndex = 1;
             this.menuSplitter.TabStop = false;
             // 
@@ -154,31 +167,21 @@ namespace Discss
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(203, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(597, 450);
+            this.mainPanel.Size = new System.Drawing.Size(532, 679);
             this.mainPanel.TabIndex = 2;
-            // 
-            // colseButton
-            // 
-            this.colseButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colseButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.colseButton.Location = new System.Drawing.Point(3, 403);
-            this.colseButton.Name = "colseButton";
-            this.colseButton.Size = new System.Drawing.Size(194, 44);
-            this.colseButton.TabIndex = 5;
-            this.colseButton.Text = "閉じる";
-            this.colseButton.UseVisualStyleBackColor = true;
-            this.colseButton.Click += new System.EventHandler(this.colseButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(735, 679);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.menuSplitter);
             this.Controls.Add(this.menuPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "CSS作成ツール";
+            this.Text = "Discss";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.menuPanel.ResumeLayout(false);
